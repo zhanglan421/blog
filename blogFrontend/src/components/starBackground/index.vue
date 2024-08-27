@@ -38,9 +38,9 @@ export default defineComponent({
 
     @function getMultiShadow($n) {
         $boxShadow: '#{random(100)}px #{random(100)}px #fff';
-        
+
         @for $i from 1 through $n {
-            $boxShadow: '#{$boxShadow} , #{random(100)}vw #{random(100)}vh #fff' 
+            $boxShadow: '#{$boxShadow} , #{random(100)}vw #{random(100)}vh #fff'
         }
 
         @return unquote($boxShadow);
@@ -51,6 +51,8 @@ export default defineComponent({
 
         $count: random(120);
 
+        $duration: unquote(random(20) + 's');
+
         .star-content-#{$i} {
             position: fixed;
             top: 0;
@@ -60,7 +62,7 @@ export default defineComponent({
             border-radius: 50%;
             background-color: #fff;
             box-shadow: getMultiShadow($count);
-            animation: moveUp 15s linear infinite;
+            animation: moveUp $duration linear infinite;
 
             &::after {
                 content: '';
