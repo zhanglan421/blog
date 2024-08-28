@@ -27,7 +27,7 @@ export const tsparticlesConfig = {
         detectsOn: "window",
         events: {
             onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
             },
             onDiv: {
@@ -41,7 +41,7 @@ export const tsparticlesConfig = {
                 mode: "grab",
                 parallax: {
                     enable: true,
-                    force: 100,
+                    force: 200,
                     smooth: 10,
                 },
             },
@@ -88,7 +88,7 @@ export const tsparticlesConfig = {
                 radius: 60,
             },
             grab: {
-                distance: 200,
+                distance: 100,
                 links: {
                     blink: false,
                     consent: false,
