@@ -22,7 +22,9 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .star-wrap {
+    position: fixed;
     background: radial-gradient(#141720, #242a3d);
+    top: 0;
     width: 100vw;
     height: 100vh;
 
