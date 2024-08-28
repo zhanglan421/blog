@@ -49,7 +49,7 @@ export default defineComponent({
     @for $i from 1 through 5 {
         $size: unquote(floor(calc(5/$i)) + 'px');
 
-        $count: random(120);
+        $count: random(60);
 
         $duration: unquote(random(20) + 's');
 
