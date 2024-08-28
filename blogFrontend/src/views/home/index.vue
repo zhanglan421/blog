@@ -1,5 +1,6 @@
 <template>
     <div>
+        你好
         <beian />
     </div>
 </template>
